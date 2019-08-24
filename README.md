@@ -18,4 +18,7 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#### v0.0.1
+- install vue-router and initialize it.
+    - note that when you create router instance, pass the 'routes' option, not 'router' 
+
