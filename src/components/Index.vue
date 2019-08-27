@@ -13,8 +13,14 @@
           <van-button class="button" @click="goToDynamicRoute" plain size="small" type="info">click</van-button>
         </li>
         <li>
-          <span @click="goToNestedRoutes">In real development, nested components are usually needed, 
+          <span @click="goToNestedRoutes">In real development, nested components are usually needed,
             so the routes should correspond to the special structure of components, too.</span>
+        </li>
+        <li>
+          <span @click="goToProgrammaticNavigation">
+            We are talking about navigation with tags (router-link) until now, in vue-router, there is another
+            way to navigate, programmatic navigation.It enables navigation with the router's instance methods.
+          </span>
         </li>
       </ul>
     </main>
@@ -36,6 +42,9 @@ export default {
     },
     goToNestedRoutes () {
       this.$router.push('/nested')
+    },
+    goToProgrammaticNavigation () {
+      this.$router.push('/programmatic')
     }
   }
 }

@@ -25,4 +25,6 @@ npm run build --report
 - install vant
 #### 2019-08-27
 - [Nested Routes](https://router.vuejs.org/guide/essentials/nested-routes.html)
+#### 2019-08-27
+- [Programmatic Navigation](https://router.vuejs.org/guide/essentials/navigation.html)
 

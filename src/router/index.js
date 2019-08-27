@@ -5,6 +5,7 @@ import Index from '../components/Index'
 import Aste from '../components/dynamic/Aste'
 import Nested from '../components/nested/Nested'
 import Hope from '../components/nested/Hope'
+import Programmatic from '../components/programmatic/Programmatic'
 
 Vue.use(Router)
 
@@ -38,6 +39,10 @@ let routes = [
         component: Hope
       }
     ]
+  },
+  {
+    path: '/programmatic',
+    component: Programmatic
   }
 ]
 

@@ -25,9 +25,9 @@
 export default {
   name: 'Nested',
   methods: {
-      toNestedRoute() {
-          this.$router.push('/nested/hope')
-      }
+    toNestedRoute () {
+      this.$router.push('/nested/hope')
+    }
   }
 }
 </script>
