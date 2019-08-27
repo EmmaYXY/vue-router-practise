@@ -12,6 +12,10 @@
           </van-cell-group>
           <van-button class="button" @click="goToDynamicRoute" plain size="small" type="info">click</van-button>
         </li>
+        <li>
+          <span @click="goToNestedRoutes">In real development, nested components are usually needed, 
+            so the routes should correspond to the special structure of components, too.</span>
+        </li>
       </ul>
     </main>
   </div>
@@ -29,6 +33,9 @@ export default {
   methods: {
     goToDynamicRoute () {
       this.$router.push(this.dynamicRoute)
+    },
+    goToNestedRoutes () {
+      this.$router.push('/nested')
     }
   }
 }
