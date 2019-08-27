@@ -23,4 +23,6 @@ npm run build --report
     - note that when you create router instance, pass the 'routes' option, not 'router' 
 - finished [Dynamic Route Matching](https://router.vuejs.org/guide/essentials/dynamic-matching.html) roughly, leaving ui to ponish.
 - install vant
+#### 2019-08-27
+- [Nested Routes](https://router.vuejs.org/guide/essentials/nested-routes.html)
 
