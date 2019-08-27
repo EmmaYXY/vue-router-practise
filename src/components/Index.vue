@@ -12,6 +12,12 @@
           </van-cell-group>
           <van-button class="button" @click="goToDynamicRoute" plain size="small" type="info">click</van-button>
         </li>
+        <li>
+          <span>
+            In the real development, nested components are usually needed, and routes should correspond to this
+            specific structure.
+          </span>
+        </li>
       </ul>
     </main>
   </div>

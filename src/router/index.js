@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dynamic from '../components/Dynamic'
 import Index from '../components/Index'
-import Aste from '../components/Aste'
+import Dynamic from '../components/DynamicRouteMatching/Dynamic'
+import Aste from '../components/DynamicRouteMatching/Aste'
 
 Vue.use(Router)
 
