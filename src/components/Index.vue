@@ -22,6 +22,13 @@
             way to navigate, programmatic navigation.It enables navigation with the router's instance methods.
           </span>
         </li>
+        <li>
+          <span @click="goToNamedViews">
+            Sometimes named routes perform navigation better, either by tags or programmatic navigation.The programmatic difference
+            between named routes and named views is the former names routes in constructor configuration, and the latter
+            names (router-view) and (components), not (component) configuration should be correspond to it.
+          </span>
+        </li>
       </ul>
     </main>
   </div>
@@ -45,6 +52,9 @@ export default {
     },
     goToProgrammaticNavigation () {
       this.$router.push('/programmatic')
+    },
+    goToNamedViews () {
+      this.$router.push({name: 'named'})
     }
   }
 }

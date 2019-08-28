@@ -6,6 +6,10 @@ import Aste from '../components/dynamic/Aste'
 import Nested from '../components/nested/Nested'
 import Hope from '../components/nested/Hope'
 import Programmatic from '../components/programmatic/Programmatic'
+import Named from '../components/named/Named'
+import Bar from '../components/named/Bar'
+import Content from '../components/named/Content'
+import NamedNested from '../components/named/NamedNested'
 
 Vue.use(Router)
 
@@ -43,6 +47,22 @@ let routes = [
   {
     path: '/programmatic',
     component: Programmatic
+  },
+  {
+    path: '/named',
+    name: 'named',
+    component: Named,
+    children: [
+      {
+        path: 'details',
+        name: 'details',
+        components: {
+          default: NamedNested,
+          Bar: Bar,
+          Content: Content
+        }
+      }
+    ]
   }
 ]
 

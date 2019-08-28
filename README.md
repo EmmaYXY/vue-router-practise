@@ -27,4 +27,6 @@ npm run build --report
 - [Nested Routes](https://router.vuejs.org/guide/essentials/nested-routes.html)
 #### 2019-08-27
 - [Programmatic Navigation](https://router.vuejs.org/guide/essentials/navigation.html)
-
+#### 2019-08-28
+- [Named Routes](https://router.vuejs.org/guide/essentials/named-routes.html)
+& [Named Views](https://router.vuejs.org/guide/essentials/named-views.html)
