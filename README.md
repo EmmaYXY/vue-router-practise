@@ -30,3 +30,6 @@ npm run build --report
 #### 2019-08-28
 - [Named Routes](https://router.vuejs.org/guide/essentials/named-routes.html)
 & [Named Views](https://router.vuejs.org/guide/essentials/named-views.html)
+#### 2019-08-28
+- [Redirect and Alias](https://router.vuejs.org/guide/essentials/redirect-and-alias.html)
+-  They two are just like twins, hah.

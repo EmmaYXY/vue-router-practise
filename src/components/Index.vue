@@ -29,6 +29,16 @@
             names (router-view) and (components), not (component) configuration should be correspond to it.
           </span>
         </li>
+        <li>
+          <span @click="goToRedirect">
+            Sometimes we need to redirect from one route to another.That can simply be achieved in the routes configuration.
+            For example, we go to '/from', and end up '/named' in address bar.
+          </span>
+          <span @click="goToAlias">
+            The difference between redirection and alias is alias just another symbol of some route.Like, we
+            go to 'alias', and end up '/alias' in address bar but components corresponded to '/named' are rendered.
+          </span>
+        </li>
       </ul>
     </main>
   </div>
@@ -55,6 +65,12 @@ export default {
     },
     goToNamedViews () {
       this.$router.push({name: 'named'})
+    },
+    goToRedirect () {
+      this.$router.push('/from')
+    },
+    goToAlias () {
+      this.$router.push('/alias')
     }
   }
 }

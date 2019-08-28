@@ -51,6 +51,7 @@ let routes = [
   {
     path: '/named',
     name: 'named',
+    alias: '/alias',
     component: Named,
     children: [
       {
@@ -63,6 +64,10 @@ let routes = [
         }
       }
     ]
+  },
+  {
+    path: '/from',
+    redirect: '/named'
   }
 ]
 
