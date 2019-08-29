@@ -33,3 +33,5 @@ npm run build --report
 #### 2019-08-28
 - [Redirect and Alias](https://router.vuejs.org/guide/essentials/redirect-and-alias.html)
 -  They two are just like twins, hah.
+#### 2019-08-29
+- [Passing Props to Route Components](https://router.vuejs.org/guide/essentials/passing-props.html)

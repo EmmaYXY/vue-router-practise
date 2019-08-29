@@ -10,6 +10,7 @@ import Named from '../components/named/Named'
 import Bar from '../components/named/Bar'
 import Content from '../components/named/Content'
 import NamedNested from '../components/named/NamedNested'
+import Props from '../components/props/Props'
 
 Vue.use(Router)
 
@@ -68,6 +69,11 @@ let routes = [
   {
     path: '/from',
     redirect: '/named'
+  },
+  {
+    path: '/props/:params',
+    component: Props,
+    props: true
   }
 ]
 

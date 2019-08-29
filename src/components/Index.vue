@@ -36,7 +36,13 @@
           </span>
           <span @click="goToAlias">
             The difference between redirection and alias is alias just another symbol of some route.Like, we
-            go to 'alias', and end up '/alias' in address bar but components corresponded to '/named' are rendered.
+            go to '/alias', and end up '/alias' in address bar but actually components corresponded to '/named' are rendered.
+          </span>
+        </li>
+        <li>
+          <span @click="goToPassProps">
+            To decouple component and route when using ($route), there is an alternate way to pass parameters related to
+            specific route.Passing props to route component.
           </span>
         </li>
       </ul>
@@ -71,6 +77,9 @@ export default {
     },
     goToAlias () {
       this.$router.push('/alias')
+    },
+    goToPassProps () {
+      this.$router.push('/props/shaw')
     }
   }
 }
@@ -86,4 +95,7 @@ h1
   .content
     .button
       margin-top 10px
+    li
+      margin-top 20px
+      cursor pointer
 </style>
