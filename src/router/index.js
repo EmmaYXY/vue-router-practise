@@ -11,6 +11,7 @@ import Bar from '../components/named/Bar'
 import Content from '../components/named/Content'
 import NamedNested from '../components/named/NamedNested'
 import Props from '../components/props/Props'
+import History from '../components/history/History.vue'
 
 Vue.use(Router)
 
@@ -18,7 +19,8 @@ let routes = [
   {
     path: '/',
     name: 'index',
-    component: Index
+    component: Index,
+    props: {from: 'index'}
   },
   {
     path: '/dynamic',
@@ -74,9 +76,15 @@ let routes = [
     path: '/props/:params',
     component: Props,
     props: true
+  },
+  {
+    path: '/history',
+    component: History,
+    name: 'history'
   }
 ]
 
 export default new Router({
+  mode: 'history',
   routes
 })

@@ -7,10 +7,12 @@
           <span>Go to dynamic route match.<br/>Type a route corresponding to the patten: '/dynamic/:name', like
             '/dynamic/EmmaYXY' or '/dynamic/Shania', they will get the same component rendering.
           </span>
-          <van-cell-group>
-            <van-field v-model="dynamicRoute"/>
-          </van-cell-group>
-          <van-button class="button" @click="goToDynamicRoute" plain size="small" type="info">click</van-button>
+          <div class="dynamic_field">
+            <van-cell-group>
+              <van-field size="small" v-model="dynamicRoute"/>
+            </van-cell-group>
+            <van-button class="button" @click="goToDynamicRoute" plain size="small" type="warning">click</van-button>
+          </div>
         </li>
         <li>
           <span @click="goToNestedRoutes">In real development, nested components are usually needed,
@@ -45,6 +47,11 @@
             specific route.Passing props to route component.
           </span>
         </li>
+        <li>
+          <span @click="goToHistoryMode">
+            History Mode
+          </span>
+        </li>
       </ul>
     </main>
   </div>
@@ -53,11 +60,19 @@
 <script>
 export default {
   name: 'Index',
+  props: {
+    from: {
+      type: String
+    }
+  },
   data () {
     return {
       msg: 'welcome to vue-router-practise',
       dynamicRoute: '/dynamic/EmmaYXY'
     }
+  },
+  created () {
+    console.info(this.from)
   },
   methods: {
     goToDynamicRoute () {
@@ -80,6 +95,9 @@ export default {
     },
     goToPassProps () {
       this.$router.push('/props/shaw')
+    },
+    goToHistoryMode () {
+      this.$router.push({name: 'history'})
     }
   }
 }
@@ -91,11 +109,21 @@ h1
   text-align center
 .content_links
   margin 0 10px
+  padding-bottom 20px
   text-align left
   .content
     .button
       margin-top 10px
     li
-      margin-top 20px
+      background: #fff8dc
+      padding 10px
+      border-radius 10px
+      margin-top 10px
       cursor pointer
+      .dynamic_field
+        display flex
+        margin-top 10px
+        .van-cell-group
+          width 36%
+          margin-right 10px
 </style>
