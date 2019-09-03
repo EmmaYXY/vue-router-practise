@@ -52,6 +52,14 @@
             History Mode
           </span>
         </li>
+        <li>
+          <span @click="goToNavigationGuards">
+            As its name suggests, navigation guards are hooks that guard some specific door during the navigation.And you are allowed
+            to do something in them.
+            Like (beforeRouteLeave), it will be triggered before the route is navigated away.And it has access to (this),which passed to 
+            the router configuration.
+          </span>
+        </li>
       </ul>
     </main>
   </div>
@@ -67,7 +75,7 @@ export default {
   },
   data () {
     return {
-      msg: 'welcome to vue-router-practise',
+      msg: 'Welcome to vue-router-practise',
       dynamicRoute: '/dynamic/EmmaYXY'
     }
   },
@@ -98,6 +106,9 @@ export default {
     },
     goToHistoryMode () {
       this.$router.push({name: 'history'})
+    },
+    goToNavigationGuards () {
+      this.$router.push({name: 'guards'})
     }
   }
 }

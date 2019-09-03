@@ -11,7 +11,8 @@ import Bar from '../components/named/Bar'
 import Content from '../components/named/Content'
 import NamedNested from '../components/named/NamedNested'
 import Props from '../components/props/Props'
-import History from '../components/history/History.vue'
+import History from '../components/history/History'
+import Guards from '../components/guards/Guards'
 
 Vue.use(Router)
 
@@ -81,6 +82,11 @@ let routes = [
     path: '/history',
     component: History,
     name: 'history'
+  },
+  {
+    path: '/guards',
+    component: Guards,
+    name: 'guards'
   }
 ]
 
