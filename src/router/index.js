@@ -13,6 +13,7 @@ import NamedNested from '../components/named/NamedNested'
 import Props from '../components/props/Props'
 import History from '../components/history/History'
 import Guards from '../components/guards/Guards'
+import Meta from '../components/meta/Meta'
 
 Vue.use(Router)
 
@@ -87,6 +88,14 @@ let routes = [
     path: '/guards',
     component: Guards,
     name: 'guards'
+  },
+  {
+    path: '/meta',
+    component: Meta,
+    name: 'meta',
+    meta: {
+      slogan: 'To love and create beauty, though.'
+    }
   }
 ]
 

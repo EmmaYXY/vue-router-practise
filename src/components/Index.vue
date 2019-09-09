@@ -56,8 +56,13 @@
           <span @click="goToNavigationGuards">
             As its name suggests, navigation guards are hooks that guard some specific door during the navigation.And you are allowed
             to do something in them.
-            Like (beforeRouteLeave), it will be triggered before the route is navigated away.And it has access to (this),which passed to 
+            Like (beforeRouteLeave), it will be triggered before the route is navigated away.And it has access to (this),which passed to
             the router configuration.
+          </span>
+        </li>
+        <li>
+          <span @click="goToMetaFields">
+            There are many ways to pass values in vue-router.Meta fields is one of them.
           </span>
         </li>
       </ul>
@@ -109,6 +114,9 @@ export default {
     },
     goToNavigationGuards () {
       this.$router.push({name: 'guards'})
+    },
+    goToMetaFields () {
+      this.$router.push({name: 'meta'})
     }
   }
 }
