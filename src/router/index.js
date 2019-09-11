@@ -14,6 +14,7 @@ import Props from '../components/props/Props'
 import History from '../components/history/History'
 import Guards from '../components/guards/Guards'
 import Meta from '../components/meta/Meta'
+import Scroll from '../components/scroll/Scroll'
 
 Vue.use(Router)
 
@@ -96,10 +97,21 @@ let routes = [
     meta: {
       slogan: 'To love and create beauty, though.'
     }
+  },
+  {
+    path: '/scroll',
+    component: Scroll,
+    name: 'scroll',
+    meta: {
+      scroll: 'The most important thing is to love yourself first.'
+    }
   }
 ]
 
 export default new Router({
   mode: 'history',
-  routes
+  routes,
+  scrollBehavior (to, from) {
+    return {x: 0, y: 0}
+  }
 })

@@ -65,6 +65,12 @@
             There are many ways to pass values in vue-router.Meta fields is one of them.
           </span>
         </li>
+        <li>
+          <span @click="goToScrollBehavior">
+            It's a good day to scroll to the top for a page.But the previous has already scrolled to the middle.What can we do to
+            achieve our goal? Scroll Behavior is the right answer.
+          </span>
+        </li>
       </ul>
     </main>
   </div>
@@ -117,6 +123,9 @@ export default {
     },
     goToMetaFields () {
       this.$router.push({name: 'meta'})
+    },
+    goToScrollBehavior () {
+      this.$router.push({name: 'scroll'})
     }
   }
 }

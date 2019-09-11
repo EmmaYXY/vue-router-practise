@@ -35,3 +35,6 @@ npm run build --report
 -  They two are just like twins, hah.
 #### 2019-08-29
 - [Passing Props to Route Components](https://router.vuejs.org/guide/essentials/passing-props.html)
+#### 2019-09-11
+- [Scroll Behavior](https://router.vuejs.org/guide/advanced/scroll-behavior.html)
+
