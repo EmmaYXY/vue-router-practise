@@ -1,10 +1,18 @@
 <template>
   <div>
-    Named can set you free.
+    <p class="chapter_wrapper">
+      Named can set you free.
+    </p>
     <router-link :to="{name: 'details'}">Click to named nested views.</router-link>
-    <router-view></router-view>
-    <router-view name="Bar"></router-view>
-    <router-view name="Content"></router-view>
+    <p>
+      <router-view></router-view>
+    </p>
+    <p>
+      <router-view name="Bar"></router-view>
+    </p>
+    <p>
+      <router-view name="Content"></router-view>
+    </p>
   </div>
 </template>
 

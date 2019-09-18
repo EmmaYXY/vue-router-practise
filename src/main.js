@@ -5,6 +5,7 @@ import App from './App'
 import router from './router/index.js'
 import Vant from 'vant'
 import 'vant/lib/index.css'
+import './assets/base.styl'
 
 Vue.config.productionTip = false
 

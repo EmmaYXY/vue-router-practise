@@ -148,10 +148,6 @@ h1
       border-radius 10px
       margin-top 10px
       cursor pointer
-      .dynamic_field
-        display flex
-        margin-top 10px
-        .van-cell-group
-          width 36%
-          margin-right 10px
+.van-button--warning
+  border-color #ffffff
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chapter_wrapper">
     Hope can set you free.
   </div>
 </template>
