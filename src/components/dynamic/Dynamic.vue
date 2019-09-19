@@ -26,21 +26,21 @@
 
 <script>
 export default {
-  name: "Demo",
-  data() {
+  name: 'Demo',
+  data () {
     return {
-      asteValue: "/aste-EmmaYXY"
-    };
+      asteValue: '/aste-EmmaYXY'
+    }
   },
-  created() {
-    console.info(this.$route.params);
+  created () {
+    console.info(this.$route.params)
   },
   methods: {
-    goToAste() {
-      this.$router.push(this.asteValue);
+    goToAste () {
+      this.$router.push(this.asteValue)
     }
   }
-};
+}
 </script>
 
 <style lang="stylus">

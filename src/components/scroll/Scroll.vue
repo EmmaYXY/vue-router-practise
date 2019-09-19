@@ -1,7 +1,7 @@
 <template>
   <div>
-      <article style="height:200vh">
-         我来写一下东西
+      <article class="chapter_wrapper" style="height:200vh">
+         To be continued......(233333, it's an article tag.5555)
       </article>
   </div>
 </template>
