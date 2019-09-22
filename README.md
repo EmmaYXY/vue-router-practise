@@ -40,5 +40,5 @@ npm run build --report
 #### 2019-09-18
 - some style
 #### A picture of vue-router-practise
-[vue-router-practise](https://i.loli.net/2019/09/22/VIeB48HMLNZ1myv.png)
+![vue-router-practise](https://i.loli.net/2019/09/22/VIeB48HMLNZ1myv.png)
 
