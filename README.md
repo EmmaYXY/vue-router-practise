@@ -39,6 +39,8 @@ npm run build --report
 - [Scroll Behavior](https://router.vuejs.org/guide/advanced/scroll-behavior.html)
 #### 2019-09-18
 - some style
+#### Write an article about Vue Router 2019-10-02
+- [A rough scan for Vue Router: match route and components, pass values and navigate](https://sisteryang.com/2019/10/02/A-rough-scan-for-Vue-Router-match-route-and-components-pass-values-and-navigate/#more)
 #### A picture of vue-router-practise
 ![vue-router-practise](https://i.loli.net/2019/09/22/VIeB48HMLNZ1myv.png)
 
